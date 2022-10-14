@@ -1,0 +1,35 @@
+version: '3.8'
+
+services:
+  postgres:
+    container_name: postgres
+    image: postgres:15rc2-alpine3.16
+    environment:
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: pass
+      POSTGRES_DB: api
+    ports:
+      - 5432:5432
+    volumes:
+      - "db_store:/var/lib/postgresql/data"
+
+  back-end:
+    container_name: back-end
+    ports:
+      - 4100:4100
+    expose:
+      - "4100"
+    volumes:
+      - ./back-end:/back-end
+    build: 
+      context: ./back-end
+      dockerfile: Dockerfile
+    command: "npm start"
+    depends_on:
+      - postgres
+    environment:
+      DB_URL: postgres://user:pass@postgres:5432/api
+      PORT: 4100
+
+volumes:
+  db_store:
