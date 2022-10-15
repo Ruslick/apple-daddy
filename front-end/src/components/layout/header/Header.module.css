@@ -1,0 +1,11 @@
+.header {
+  background: var(--primary-color);
+  margin: var(--x3);
+  margin-bottom: var(--x20);
+
+  border-radius: var(--x1);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.7);
+  display: flex;
+  padding: var(--x1) var(--x4);
+
+}

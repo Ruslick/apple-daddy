@@ -1,0 +1,42 @@
+/* text-sizes */
+
+.p {
+  font-size: var(--x4);
+  line-height: var(--x6);
+}
+
+.h5 {
+  font-size: var(--x8);
+}
+
+.h3 {
+  font-size: var(--x6);
+}
+
+
+/* text-types */
+
+.bold {
+  font-weight: bold;
+}
+
+.italic {
+  font-style: italic;
+}
+
+
+
+/* text-colors */
+
+.primary {
+  color: var(--primary-text-color);
+}
+
+
+.secondary {
+  color: var(--secondary-text-color);
+}
+
+.caption {
+  color: var(--caption-color-text)
+}

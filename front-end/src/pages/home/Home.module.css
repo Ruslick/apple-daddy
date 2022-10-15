@@ -1,0 +1,22 @@
+.homeWrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: var(--x4);
+  
+  width: fit-content;
+  margin: 0 auto;
+}
+
+
+
+@media (max-width: 960px) {
+  .homeWrapper {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 961px) and (max-width: 1140px) {
+  .homeWrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+}

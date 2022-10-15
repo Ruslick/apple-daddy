@@ -1,0 +1,14 @@
+.toTop {
+  padding: var(--x3);
+  background: var(--primary-action-color);
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  border-radius: 50%;
+  bottom: var(--x10);
+  right: var(--x10);
+  box-shadow: 0 0 10px 1px var(--secondary-color-text);
+  cursor: pointer;
+}

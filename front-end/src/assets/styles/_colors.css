@@ -1,0 +1,14 @@
+:root {
+  --primary-color: rgba(0, 0, 0, 0.2);
+  --secondary-color: gray;
+  --bg-color: linear-gradient(to right top, #ffffff, #f8f8f8, #f1f1f1, #eaeaea, #e3e3e3);
+  --primary-text-color: #000000;
+  --secondary-text-color: #474D57;
+  --primary-action-color: linear-gradient(90deg, #ffec70,#ffdd00,#ffe229);
+  --hover-action-color: linear-gradient(90deg, #ffdd00,#f3d300,#ffdd00);
+  --inactive-color-text: #C0C0C0;
+  --caption-color-text: #CFCFCF;
+  --border-color: #474D57;
+  --bg-card-color: #000000;
+  --secondary-color-text: #B7BDC6;
+}

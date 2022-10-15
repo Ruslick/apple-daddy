@@ -1,0 +1,25 @@
+.button {
+  padding: var(--x3) var(--x9);
+  border-radius: var(--x9);
+  transition-duration: 200ms;
+}
+
+.primary {
+  composes: button;
+  font-size: var(--x6);
+  background: var(--primary-action-color);
+  &:hover {
+    transform: scale(1.1);
+    background: var(--hover-action-color);
+    
+  }
+}
+
+.link {
+  composes: button;
+  color: var(--secondary-text-color);
+  &:hover {
+    color: var(--primary-text-color);
+
+  }
+}

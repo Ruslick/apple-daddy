@@ -1,0 +1,36 @@
+.order {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  justify-content: center;
+  gap: var(--x10);
+}
+
+.imageWrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--x5);
+  text-align: center;
+}
+
+.description {
+  max-width: 500px;
+  text-align: start;
+}
+
+.button {
+  align-self: center;
+}
+
+@media (min-width: 921px) {
+  .order {
+    grid-template-columns: 1fr 1fr;
+  }
+
+}
